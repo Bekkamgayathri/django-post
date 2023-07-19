@@ -1,0 +1,16 @@
+{% block content %}
+
+<h1>I am Good</h1>
+<h3>How about You</h3>
+<br/>
+{% for post in posts %}
+   <ul>
+     <li>
+        <img  src="{{post.image_url}}" 
+        {{post.title}}</li>
+     </li><br/>
+    </ul>
+{% endfor %}
+
+
+{% endblock %}
